@@ -70,7 +70,9 @@ namespace LINQLink
             /**
              * Group By
              */
+             
             // Group the games by the console.
+
 
             /**
              * Distinct
@@ -89,8 +91,8 @@ namespace LINQLink
         private static void Log(string message){
             Console.WriteLine(message);
         }
-        private static void Log(IGrouping<ConsoleEnum, IEnumerable<Game>> message){
-            Console.WriteLine(message);
+        private static void Log(IGrouping<ConsoleEnum, Game> message){
+            Console.WriteLine($"{message.Key.ToString()} - {message.Select(x => x.Name)}");
         }
     }
 }
