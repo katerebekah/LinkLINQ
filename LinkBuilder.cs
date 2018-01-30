@@ -102,5 +102,33 @@ namespace LINQLink
                 BossFights = 10
             }
         };
+
+        public static List<Gamer> Gamers { get; } = new List<Gamer> {
+            new Gamer {
+                Age = 12,
+                Name = "Bob",
+                FavoriteGame = "Breath of the Wild"
+            },
+            new Gamer {
+                Age = 27,
+                Name = "Jen",
+                FavoriteGame = "Phantom Hourglass"
+            },
+            new Gamer {
+                Age = 49,
+                Name = "Maria",
+                FavoriteGame = "Spirit Tracks"
+            },
+            new Gamer {
+                Age = 32,
+                Name = "Sean",
+                FavoriteGame = "A Link to the Past"
+            },
+            new Gamer {
+                Age = 30,
+                Name = "Kate",
+                FavoriteGame = "A Link Between Worlds"
+            }
+        };
     }
 }
